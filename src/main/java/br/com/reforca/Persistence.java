@@ -335,9 +335,9 @@ class SessaoDAO {
             for (int i = 0;i < ps.size();i ++) p.setObject(i + 1, ps.get(i));
             try (ResultSet r = p.executeQuery()) {
                 while (r.next()) {
-                    int n = r.getInt(14);
+                    int n = r.getInt(13);
                     Integer nota = r.wasNull()?null:n;
-                    out.add(new SessaoResumo(r.getLong(1), r.getDate(2).toLocalDate(), r.getTime(3).toLocalTime(), r.getTime(4).toLocalTime(), r.getString(5), r.getString(6), r.getString(7), r.getString(8), r.getString(9), r.getString(10), r.getString(11), r.getString(12), nota, r.getString(15)));
+                    out.add(new SessaoResumo(r.getLong(1), r.getDate(2).toLocalDate(), r.getTime(3).toLocalTime(), r.getTime(4).toLocalTime(), r.getString(5), r.getString(6), r.getString(7), r.getString(8), r.getString(9), r.getString(10), r.getString(11), r.getString(12), nota, r.getString(14)));
                 }
             }
         }

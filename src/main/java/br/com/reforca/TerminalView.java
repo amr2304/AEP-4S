@@ -21,7 +21,7 @@ class TerminalView {
     void iniciar() {
         boolean sair = false;
         while (!sair) {
-            System.out.println("\n=== REFORÇA | Mentoria escolar voluntária ===\n1 Aluno  2 Mentor  3 Coordenador  4 Disciplina  5 Listar cadastros\n6 Planos de estudo  7 Agendar sessão  8 Consultar sessões  9 Alterar sessão\n10 Cancelar sessão  11 Registrar resultado  12 Relatório  0 Sair");
+            System.out.println("\n=== REFORÇA | Mentoria escolar voluntária ===\n\n1 - Cadastrar aluno\n2 - Cadastrar mentor\n3 - Cadastrar coordenador\n4 - Cadastrar disciplina\n5 - Listar cadastros\n6 - Planos de estudo\n7 - Agendar sessão\n8 - Consultar sessões\n9 - Alterar sessão\n10 - Cancelar sessão\n11 - Registrar resultado\n12 - Relatório\n0 - Sair");
             try {
                 switch (ler("Opção: ")) {
                     case "1" -> aluno();
